@@ -20,7 +20,7 @@ pipeline {
             steps {
                 echo 'Deploying to Docker...'
                 sh 'docker build -t hello-world:0.1 .'
-                sh 'docker run --detach --publish 8091:3000 hello-world:0.1'
+                sh 'docker run --detach --publish 8092:3000 hello-world:0.1'
             }
         }
     }
